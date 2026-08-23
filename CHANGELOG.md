@@ -1,6 +1,10 @@
 # Changelog
 
 All notable changes to naden are documented here.
+## [v1.0.13] — 2026-08-23
+
+### Bug Fixes
+- Case-insensitive shortcuts, disable autocapitalize/autocomplete (#19)
 ## [v1.0.12] — 2026-07-16
 
 ### Bug Fixes
