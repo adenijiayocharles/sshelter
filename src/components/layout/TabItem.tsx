@@ -88,6 +88,10 @@ export default function TabItem({
             e.stopPropagation();
           }}
           onClick={(e) => e.stopPropagation()}
+          autoCapitalize="off"
+          autoCorrect="off"
+          autoComplete="off"
+          spellCheck={false}
           className="max-w-[120px] min-w-[60px] bg-transparent border-b border-accent outline-none text-white text-sm"
           aria-label="Rename tab"
         />

@@ -78,6 +78,10 @@ export default function NewSessionPicker({ open, onOpenChange, servers, onOpenSe
               onChange={(e) => setQuery(e.target.value)}
               onKeyDown={(e) => { if (e.key === "Escape") close(); }}
               placeholder="Search servers…"
+              autoCapitalize="off"
+              autoCorrect="off"
+              autoComplete="off"
+              spellCheck={false}
               className="w-full bg-surface-3 border border-stroke rounded px-2.5 py-1.5 text-sm text-white placeholder-faint outline-none focus:border-accent transition-colors"
             />
           </div>
