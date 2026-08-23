@@ -22,7 +22,7 @@ export function useKeyboardShortcuts({ onNewTab }: Options = {}) {
       if (vaultLocked) return;
       const meta = e.metaKey || e.ctrlKey;
       if (!meta) return;
-      switch (e.key) {
+      switch (e.key.toLowerCase()) {
         case "k":
           e.preventDefault();
           openPalette();
