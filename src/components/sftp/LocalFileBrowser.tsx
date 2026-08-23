@@ -210,7 +210,7 @@ export default function LocalFileBrowser({ onSelectedChange, onPathChange, onAct
   keyHandlerRef.current = (e: KeyboardEvent) => {
     if (!isActive) return;
     if (document.activeElement?.tagName === "INPUT") return;
-    if ((e.metaKey || e.ctrlKey) && e.key === "a") {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "a") {
       e.preventDefault();
       setSelected(visibleEntries.map((entry) => entry.path));
     }

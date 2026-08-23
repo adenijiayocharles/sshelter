@@ -16,6 +16,9 @@ export function HooksTab({
           onChange={set("preConnectHook")}
           placeholder={"#!/bin/sh\n# Runs locally before connecting\naws sso login --profile prod"}
           rows={4}
+          autoCapitalize="off"
+          autoCorrect="off"
+          autoComplete="off"
           spellCheck={false}
           className="w-full rounded-md border border-stroke bg-surface-2 px-3 py-2 text-xs font-mono text-white placeholder-[#555] focus:outline-none focus:ring-1 focus:ring-accent resize-none"
         />
@@ -31,6 +34,9 @@ export function HooksTab({
           onChange={set("postDisconnectHook")}
           placeholder={"#!/bin/sh\n# Runs locally after session ends\nnotify-send \"Disconnected from $NADEN_HOST\""}
           rows={4}
+          autoCapitalize="off"
+          autoCorrect="off"
+          autoComplete="off"
           spellCheck={false}
           className="w-full rounded-md border border-stroke bg-surface-2 px-3 py-2 text-xs font-mono text-white placeholder-[#555] focus:outline-none focus:ring-1 focus:ring-accent resize-none"
         />

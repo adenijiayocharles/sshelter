@@ -199,9 +199,9 @@ export function useRemotePane(input: RemotePaneInput): RemotePaneOutput {
       return;
     }
     if (!session) return;
-    if (mod && e.key === "r") { e.preventDefault(); handleRefresh(); }
+    if (mod && e.key.toLowerCase() === "r") { e.preventDefault(); handleRefresh(); }
     if (mod && e.key === "ArrowUp") { e.preventDefault(); handleUp(); }
-    if (mod && e.key === "a") {
+    if (mod && e.key.toLowerCase() === "a") {
       if (!isActive) return;
       e.preventDefault();
       setSelected(visibleEntries.map((entry) => entry.path));

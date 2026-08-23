@@ -378,6 +378,10 @@ export default function CommandPalette({ onActivateSession }: Props) {
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Search servers, sessions, actions…"
+            autoCapitalize="off"
+            autoCorrect="off"
+            autoComplete="off"
+            spellCheck={false}
             className="flex-1 bg-transparent py-4 text-sm text-white placeholder:text-dim outline-none"
           />
           <kbd className="text-[10px] text-dim border border-stroke-subtle rounded px-1.5 py-0.5 shrink-0 font-sans">
